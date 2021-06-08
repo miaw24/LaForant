@@ -1,0 +1,92 @@
+/* @keyframes slidein-left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slidein-right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} */
+
+#content-container{
+    background-color: rgb(255, 145, 0);
+}
+
+#content-container #content-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vw;
+    /* width: 100vw; */
+    /* background-color: rgb(255, 145, 0); */
+}
+
+#content-container #content-information #content-information-texts{
+    text-align: center;
+    max-width: 50vw;
+    padding: 1em;
+    color: rgb(255, 255, 255);
+}
+
+#content-container #content-information #content-information-texts #content-information-title{
+    animation-name: slidein-left;
+    animation-duration: 2s;
+    padding-bottom: 0.5em;
+}
+
+#content-container #content-information #content-information-texts #content-information-desc{
+    animation-name: slidein-right;
+    animation-duration: 2s;
+    font-size: 1em;
+}
+
+#content-container #content-showcase{
+    padding: 1em;
+    color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 102, 0); */
+}
+
+#content-container #content-showcase .showcase-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+#content-container #content-showcase .showcase-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#content-container #content-showcase .showcase-box{
+    width: 30vw;
+    height: 15vw;
+    background-color: var(--main-color-alt);
+    opacity: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#content-container #content-showcase .showcase-texts{
+    display: flex;
+    align-self: flex-end;
+    padding: 1em;
+}
+
+/* hover anim [start] */
+
+#content-container #content-showcase .showcase-box:hover{
+    opacity: 100%;
+}
+
+/* hover anim [end] */

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaForant | Pre Register</title>
+    <link rel="stylesheet" href="../styles/global-styling.css">
+    <link rel="stylesheet" href="../styles/navbar-styles.css">
+    <link rel="stylesheet" href="../styles/keyframe-animation.css">
+    <link rel="stylesheet" href="../styles/prereg.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../scripts/navbar_helper.js"></script>
+    <script src="../scripts/form-validation.js"></script>
+    <script src="../scripts/prereg.js"></script>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="navbar">
+        <div class="navbar-nav">
+            <div class="nav-item">
+                <img src="../assets/logo-placeholder-1.svg" alt="LOGO" class="nav-logo">
+            </div>
+            <div class="nav-item">
+                <a href="../index.html" class="nav-link" id="nav-home">
+                    HOME
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="maps.html" class="nav-link" id="nav-maps">
+                    MAPS
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="agents.html" class="nav-link" id="nav-agents">
+                    AGENTS
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="sys-req.html" class="nav-link" id="nav-sysreq">
+                    SYSTEM REQUIREMENTS
+                </a>
+            </div>
+            <div class="nav-item-prereg">
+                <a href="#" class="nav-link" id="nav-prereg">
+                    PRE-REGISTER
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="content-container">
+        <div id="short-desc">
+            <h2>Pre-register right now and be the first to know when LaForant is released!</h4>
+        </div>
+        <form method="post" id="form-wrapper">
+            <div class="form-qs">
+                <label for="username-input">Username</label>
+                <input type="text" id="username-input">
+            </div>
+            <div class="form-qs">
+                <label for="password-input">Password</label>
+                <input type="password" id="password-input">
+            </div>
+            <div class="form-qs">
+                <label for="email-input">Email</label>
+                <input type="text" id="email-input">
+            </div>
+            <div class="form-qs">
+                <label for="dob-input">Date of Birth</label>
+                <input type="date" id="dob-input">
+            </div>
+            <div class="form-qs">
+                <label for="nationality-input">Nationality</label>
+                <!-- <input type="text" id="nationality-input"> -->
+                <select name="nationality" id="nationality-input"></select>
+            </div>
+            <div class="form-agreement">
+                <input type="checkbox" id="user-agreement">
+                <label for="user-agreement">I agree to LaForant's Terms of Service and Privacy Policy</label>
+            </div>
+            <div class="form-submit-button">
+                <button type="submit" id="btn-submit" onclick="return validate_input()">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
