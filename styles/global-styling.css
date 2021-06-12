@@ -11,11 +11,13 @@
     --main-color: rgb(255,174,0);
     --main-color-darker: rgb(255, 145, 0);
     --main-color-alt: rgb(255, 60, 0);
+    --secondary-color: rgb(255, 100, 0);
 }
 
 ::-webkit-scrollbar{
     display: none;
 }
+
 
 /* color palette
 

@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="../styles/global-styling.css">
     <link rel="stylesheet" href="../styles/navbar-styles.css">
     <link rel="stylesheet" href="../styles/keyframe-animation.css">
+    <link rel="stylesheet" href="../styles/page-title.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../scripts/navbar_helper.js"></script>
+    <!-- page related -->
+    <link rel="stylesheet" href="../styles/sysreq.css">
 </head>
 <body>
     <div class="header"></div>
     <div class="navbar">
         <div class="navbar-nav">
             <div class="nav-item">
-                <img src="../assets/logo-placeholder-1.svg" alt="LOGO" class="nav-logo">
+                <!-- <img src="../assets/logo-placeholder-1.svg" alt="LOGO" class="nav-logo"> -->
+                <img src="../assets/logo_website.png" alt="LOGO" class="nav-logo">
             </div>
             <div class="nav-item">
                 <a href="../index.html" class="nav-link" id="nav-home">
@@ -44,8 +48,40 @@
             </div>
         </div>
     </div>
+    <div id="content-title">
+        <img src="../assets/logo_website_cropped.png" alt="LaForant Logo">
+        <h1>SYSTEM REQUIREMENTS</h1>
+    </div>
     <div id="content-container">
-        sysreq
+        <div id="content-sysreq">
+            <div class="sysreq-container" id="sysreq-minimum">
+                <h2 class="sysreq-title" id="sysreq-title">Minimum</h2>
+                <h3 class="sysreq-item" id="sysreq-os">Minimum OS</h3>
+                <h3 class="sysreq-item" id="sysreq-cpu">Minimum CPU</h3>
+                <h3 class="sysreq-item" id="sysreq-ram">Minimum RAM</h3>
+                <h3 class="sysreq-item" id="sysreq-gpu">Minimum GPU</h3>
+                <h3 class="sysreq-item" id="sysreq-vram">Minimum VRAM</h3>
+                <h3 class="sysreq-item" id="sysreq-hdd">Memory</h3>
+            </div>
+            <div class="sysreq-container" id="sysreq-category">
+                <h2 class="sysreq-title">&nbsp;</h2>
+                <h3 class="sysreq-item" id="sysreq-os">OS</h3>
+                <h3 class="sysreq-item" id="sysreq-cpu">CPU</h3>
+                <h3 class="sysreq-item" id="sysreq-ram">RAM</h3>
+                <h3 class="sysreq-item" id="sysreq-gpu">GPU</h3>
+                <h3 class="sysreq-item" id="sysreq-vram">VRAM</h3>
+                <h3 class="sysreq-item" id="sysreq-hdd">MEMORY</h3>
+            </div>
+            <div class="sysreq-container" id="sysreq-recommended">
+                <h2 class="sysreq-title" id="sysreq-title">Recommended</h2>
+                <h3 class="sysreq-item" id="sysreq-os">Recommended OS</h3>
+                <h3 class="sysreq-item" id="sysreq-cpu">Recommended CPU</h3>
+                <h3 class="sysreq-item" id="sysreq-ram">Recommended RAM</h3>
+                <h3 class="sysreq-item" id="sysreq-gpu">Recommended GPU</h3>
+                <h3 class="sysreq-item" id="sysreq-vram">Recommended VRAM</h3>
+                <h3 class="sysreq-item" id="sysreq-hdd">Memory</h3>
+            </div>
+        </div>
     </div>
     <div class="footer"></div>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->

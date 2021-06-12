@@ -118,6 +118,28 @@ function validate_user_agreement(user_agreement, error_message){
     }
 }
 
+function validate_nationality(nationality, error_message){
+    if(nationality.value === '__select__'){
+        error_message.push('Please select a nationality')
+    }
+}
+
+function validate_dob(dob, error_message){
+    let current_date = new Date()
+    // let dob_date = new Date(dob.value.split('-').toString())
+    let dob_date = new Date(dob.value)
+    if(isNaN(dob_date.getTime())){
+        error_message.push('Please enter your date of birth')
+    } else{
+        let current_date = new Date()
+        let dob_date = new Date(dob.value.split('-').toString())
+        let diff = (new Date(current_date.getTime() - dob_date.getTime())).getUTCFullYear() - 1970;
+        if(diff < 16){
+            error_message.push('You must at least be 16 years old to access this game')
+        }
+    }
+}
+
 function validate_input(){
     let username = document.getElementById("username-input")
     let password = document.getElementById("password-input")
@@ -130,9 +152,8 @@ function validate_input(){
     validate_username(username, error_message)
     validate_password(password, error_message)
     validate_email(email, error_message)
-    // console.log(parse_email(email.value))
-    // validate_dob(gender, error_message)
-    // // validate_nationality(nationality, error_message)
+    validate_dob(dob, error_message)
+    validate_nationality(nationality, error_message)
     validate_user_agreement(user_agreement, error_message)
 
     console.log(error_message)

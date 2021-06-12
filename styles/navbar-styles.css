@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: row;
     background-color: rgb(12, 12, 12);
+    z-index: 666;
 }
 
 .navbar .navbar-nav{
@@ -34,8 +35,10 @@
 }
 
 .navbar .navbar-nav .nav-item .nav-logo{
-    max-height: 1em;
-    padding: 1em;
+    /* max-height: 1em;
+    padding: 1em; */
+    max-height: 1.5em;
+    padding: 0.5em;
 }
 
 .navbar .navbar-nav .nav-item-prereg{

@@ -1,0 +1,87 @@
+#content-container{
+    background-color: var(--main-color-darker);
+    padding: 1em;
+}
+
+#content-sysreq{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.sysreq-container{
+    display: flex;
+    flex-direction: column;
+    color: rgb(255,255,255);
+    font-size: 1em;
+    min-width: 20vw;
+}
+
+.sysreq-container h2,
+.sysreq-container h3{
+    padding: 0.2em;
+}
+
+#sysreq-minimum h3,
+#sysreq-recommended h3{
+    font-weight: normal;
+}
+
+#sysreq-category{
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+}
+
+#sysreq-minimum{
+    text-align: right;
+}
+
+#sysreq-recommended{
+    text-align: left;
+}
+
+/* animation [start] */
+
+#sysreq-minimum h2,
+#sysreq-minimum h3{
+    animation-name: slidein-left;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+#sysreq-recommended h2,
+#sysreq-recommended h3{
+    animation-name: slidein-right;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+#sysreq-category h2,
+#sysreq-category h3{
+    animation-name: opacity-in;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+#sysreq-os{
+    animation-delay: 0.1s;
+}
+#sysreq-cpu{
+    animation-delay: 0.2s;
+}
+#sysreq-ram{
+    animation-delay: 0.3s;
+}
+#sysreq-gpu{
+    animation-delay: 0.4s;
+}
+#sysreq-vram{
+    animation-delay: 0.5s;
+}
+#sysreq-hdd{
+    animation-delay: 0.6s;
+}
+
+/* animation [end] */
