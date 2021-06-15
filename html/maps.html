@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/navbar-styles.css">
     <link rel="stylesheet" href="../styles/keyframe-animation.css">
     <link rel="stylesheet" href="../styles/page-title.css">
+    <link rel="stylesheet" href="../styles/footer.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../scripts/navbar_helper.js"></script>
     <!-- page related -->
@@ -17,7 +18,7 @@
     <div class="header"></div>
     <div class="navbar">
         <div class="navbar-nav">
-            <div class="nav-item">
+            <div class="nav-item" id="nav-logo-container">
                 <!-- <img src="../assets/logo-placeholder-1.svg" alt="LOGO" class="nav-logo"> -->
                 <img src="../assets/logo_website.png" alt="LOGO" class="nav-logo">
             </div>
@@ -26,15 +27,18 @@
                     HOME
                 </a>
             </div>
-            <div class="nav-item">
-                <a href="#" class="nav-link" id="nav-maps">
-                    MAPS
+            <div class="nav-item nav-dropdown">
+                <a href="#" class="nav-link">
+                    GAME INFO
                 </a>
-            </div>
-            <div class="nav-item">
-                <a href="agents.html" class="nav-link" id="nav-agents">
-                    AGENTS
-                </a>
+                <div class="nav-dropdown-container">
+                    <a href="#" class="nav-dropdown-link" id="nav-maps">
+                        MAPS
+                    </a>
+                    <a href="agents.html" class="nav-dropdown-link" id="nav-agents">
+                        AGENTS
+                    </a>
+                </div>
             </div>
             <div class="nav-item">
                 <a href="sys-req.html" class="nav-link" id="nav-sysreq">
@@ -53,15 +57,41 @@
         <h1>MAPS</h1>
     </div>
     <div id="content-container">
-        <div id="content-slider">
-            <div class="slides">
-                <img src="" alt="map-image">
-                <h2>map-name</h2>
+        <div class="showcase-items">
+            <div class="showcase-box">
+                <div class="showcase-image">
+                    <img src="../assets/_maps/maps1.png" alt="">
+                </div>
+                <div class="showcase-texts">
+                    <h3 class="showcase-name">Map Name 1</h3>
+                </div>
+            </div>
+            <div class="showcase-box">
+                <div class="showcase-image">
+                    <img src="../assets/_maps/maps2.png" alt="">
+                </div>
+                <div class="showcase-texts">
+                    <h3 class="showcase-name">Map Name 2</h3>
+                </div>
+            </div>
+            <div class="showcase-box">
+                <div class="showcase-image">
+                    <img src="../assets/_maps/maps3.png" alt="">
+                </div>
+                <div class="showcase-texts">
+                    <h3 class="showcase-name">Map Name 3</h3>
+                </div>
             </div>
         </div>
-        <div id="content-grid"></div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <div id="footer-text">
+            © LaForant. Trademarks belong to their respective owners. All rights reserved.
+        </div>
+        <div id="footer-logo">
+            <img src="../assets/logo_website_cropped.png" alt="">
+        </div>
+    </div>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 </body>
 </html>

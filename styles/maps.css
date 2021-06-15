@@ -1,3 +1,49 @@
-#content-slider .slides{
+#content-container{
     background-color: var(--main-color-darker);
+    color: rgb(255, 255, 255);
 }
+
+#content-container .showcase-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0em 0em 2em 0em;
+}
+
+#content-container .showcase-box{
+    margin: 1em 0.5em 0em 0.5em;
+    width: 300px;
+    height: 300px;
+    background-color: var(--main-color-alt);
+    display: flex;
+    justify-content: center;
+}
+
+#content-container .showcase-box .showcase-image > img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    opacity: 1;
+}
+
+#content-container .showcase-texts{
+    display: flex;
+    position: absolute;
+    align-self: center;
+    padding: 1em;
+    opacity: 0;
+}
+
+/* hover anim [start] */
+
+#content-container .showcase-box:hover .showcase-image > img{
+    opacity: 0.2;
+}
+
+#content-container .showcase-box:hover .showcase-texts{
+    opacity: 1;
+}
+
+/* hover anim [end] */

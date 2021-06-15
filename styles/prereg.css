@@ -58,15 +58,17 @@
     min-width: 200px;
     min-height: 70px;
     font-size: 1em;
-    background-color: white;
-    color: black;
+    /*background-color: white;*/
+    background-color: var(--main-color-alt);
+    color: white;
     border: 0.1em solid var(--main-color-alt);
 }
 
 /* hover anim [start]*/
 
 #btn-submit:hover{
-    background-color: var(--main-color-alt);
+    background-color: var(--main-color-alt-lt);
+    border: 0.1em solid var(--main-color-alt-lt);
     color: white;
 }
 

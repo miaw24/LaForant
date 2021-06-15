@@ -1,0 +1,17 @@
+.footer{
+    background-color: rgb(12, 12, 12);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer #footer-text{
+    font-size: 1em;
+    padding: 1em 0.5em 0.5em 0.5em;
+}
+
+.footer #footer-logo img{
+    max-height: 1.5em;
+    padding: 0.5em 0.5em 2em 0.5em;
+}
