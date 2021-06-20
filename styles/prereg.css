@@ -1,5 +1,7 @@
 #content-container{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
     padding: 1em;
     background-color: var(--main-color-darker);
@@ -13,6 +15,7 @@
     align-items: center;
     text-align: center;
     width: 40vw;
+    /* min-width: 600px; */
 }
 
 #form-wrapper{
@@ -20,7 +23,8 @@
     animation-duration: 2s; */
     display: flex;
     /* width: 100%; */
-    widows: 40vw;
+    width: 40vw;
+    /* min-width: 600px; */
     flex-direction: column;
     align-items: center;
 }
@@ -101,3 +105,22 @@
 }
 
 /* animation delay [end] */
+
+/* 800px rule [start] */
+
+@media only screen and (max-width: 800px){
+    #content-container{
+        flex-direction: column;
+    }
+    #short-desc{
+        min-width: 70vw;
+    }
+    #form-wrapper{
+        min-width: 70vw;
+    }
+    .form-qs{
+        min-width: 50vw;
+    }
+}
+
+/* 800px rule [end] */

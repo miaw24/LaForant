@@ -17,7 +17,7 @@
 <body>
     <div class="header"></div>
     <div class="navbar">
-        <div class="navbar-nav">
+        <div class="navbar-nav" id="normal-navbar">
             <div class="nav-item" id="nav-logo-container">
                 <!-- <img src="../assets/logo-placeholder-1.svg" alt="LOGO" class="nav-logo"> -->
                 <img src="../assets/logo_website.png" alt="LOGO" class="nav-logo">
@@ -51,6 +51,43 @@
                 </a>
             </div>
         </div>
+        <div id="alt-navbar">
+            <div class="nav-show">
+                <button type="button" id="show-nav" onclick="show_nav()">
+                    MENU
+                </button>
+            </div>
+            <div class="nav-title">
+                LaForant
+            </div>
+            <div class="navbar-nav">
+                <div class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        HOME
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="maps.html" class="nav-link">
+                        MAPS
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="agents.html" class="nav-link">
+                        AGENTS
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="sys-req.html" class="nav-link">
+                        SYSTEM REQUIREMENTS
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="pre-reg.html" class="nav-link">
+                        PRE-REGISTER
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="content-title">
         <img src="../assets/logo_website_cropped.png" alt="LaForant Logo">
@@ -59,31 +96,22 @@
     <div id="content-container">
         <div id="content-sysreq">
             <div class="sysreq-container" id="sysreq-minimum">
-                <h2 class="sysreq-title" id="sysreq-title">Minimum</h2>
-                <h3 class="sysreq-item" id="sysreq-os">Minimum OS</h3>
-                <h3 class="sysreq-item" id="sysreq-cpu">Minimum CPU</h3>
-                <h3 class="sysreq-item" id="sysreq-ram">Minimum RAM</h3>
-                <h3 class="sysreq-item" id="sysreq-gpu">Minimum GPU</h3>
-                <h3 class="sysreq-item" id="sysreq-vram">Minimum VRAM</h3>
-                <h3 class="sysreq-item" id="sysreq-hdd">Memory</h3>
-            </div>
-            <div class="sysreq-container" id="sysreq-category">
-                <h2 class="sysreq-title">&nbsp;</h2>
-                <h3 class="sysreq-item" id="sysreq-os">OS</h3>
-                <h3 class="sysreq-item" id="sysreq-cpu">CPU</h3>
-                <h3 class="sysreq-item" id="sysreq-ram">RAM</h3>
-                <h3 class="sysreq-item" id="sysreq-gpu">GPU</h3>
-                <h3 class="sysreq-item" id="sysreq-vram">VRAM</h3>
-                <h3 class="sysreq-item" id="sysreq-hdd">MEMORY</h3>
+                <h2 class="sysreq-title" id="sysreq-title">Minimum Requirements</h2>
+                <h3 class="sysreq-item" id="sysreq-os"><b>OS:</b> 64-bit Windows 7</h3>
+                <h3 class="sysreq-item" id="sysreq-cpu"><b>CPU:</b> Intel Core i3-6300 3.8GHz / AMD FX-4350 4.2 GHz Quad-Core Processor</h3>
+                <h3 class="sysreq-item" id="sysreq-ram"><b>RAM:</b> 6GB</h3>
+                <h3 class="sysreq-item" id="sysreq-gpu"><b>GPU:</b> NVIDIA GeForce GT 640 / Radeon HD 7730</h3>
+                <h3 class="sysreq-item" id="sysreq-vram"><b>VRAM:</b> 1 GB</h3>
+                <h3 class="sysreq-item" id="sysreq-hdd"><b>HDD:</b> Minimum 22 GB of free space</h3>
             </div>
             <div class="sysreq-container" id="sysreq-recommended">
-                <h2 class="sysreq-title" id="sysreq-title">Recommended</h2>
-                <h3 class="sysreq-item" id="sysreq-os">Recommended OS</h3>
-                <h3 class="sysreq-item" id="sysreq-cpu">Recommended CPU</h3>
-                <h3 class="sysreq-item" id="sysreq-ram">Recommended RAM</h3>
-                <h3 class="sysreq-item" id="sysreq-gpu">Recommended GPU</h3>
-                <h3 class="sysreq-item" id="sysreq-vram">Recommended VRAM</h3>
-                <h3 class="sysreq-item" id="sysreq-hdd">Memory</h3>
+                <h2 class="sysreq-title" id="sysreq-title">Recommended Requirements</h2>
+                <h3 class="sysreq-item" id="sysreq-os"><b>OS:</b> 64-bit Windows 7</h3>
+                <h3 class="sysreq-item" id="sysreq-cpu"><b>CPU:</b> Intel i5 3570K or equivalent</h3>
+                <h3 class="sysreq-item" id="sysreq-ram"><b>RAM:</b> 8GB</h3>
+                <h3 class="sysreq-item" id="sysreq-gpu"><b>GPU:</b> Nvidia GeForce GTX 970 / AMD Radeon R9 290</h3>
+                <h3 class="sysreq-item" id="sysreq-vram"><b>VRAM:</b> 8GB</h3>
+                <h3 class="sysreq-item" id="sysreq-hdd"><b>HDD:</b> Minimum 22 GB of free space</h3>
             </div>
         </div>
     </div>

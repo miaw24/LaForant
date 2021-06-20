@@ -19,9 +19,10 @@
 <body>
     <div class="header"></div>
     <div class="navbar">
-        <div class="navbar-nav">
+        <div class="navbar-nav" id="normal-navbar">
             <div class="nav-item" id="nav-logo-container">
                 <!-- <img src="../assets/logo-placeholder-1.svg" alt="LOGO" class="nav-logo"> -->
+                <!-- <img src="../assets/logo_website.png" alt="LOGO" class="nav-logo"> -->
                 <img src="../assets/logo_website.png" alt="LOGO" class="nav-logo">
             </div>
             <div class="nav-item">
@@ -53,6 +54,43 @@
                 </a>
             </div>
         </div>
+        <div id="alt-navbar">
+            <div class="nav-show">
+                <button type="button" id="show-nav" onclick="show_nav()">
+                    MENU
+                </button>
+            </div>
+            <div class="nav-title">
+                LaForant
+            </div>
+            <div class="navbar-nav">
+                <div class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        HOME
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="maps.html" class="nav-link">
+                        MAPS
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="agents.html" class="nav-link">
+                        AGENTS
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="sys-req.html" class="nav-link">
+                        SYSTEM REQUIREMENTS
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="pre-reg.html" class="nav-link">
+                        PRE-REGISTER
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="content-title">
         <img src="../assets/logo_website_cropped.png" alt="LaForant Logo">
@@ -60,6 +98,10 @@
     </div>
     <div id="content-container">
         <div id="slider-container">
+            <div class="btn-slider">
+                <button type="button" id="btn-sprev"><</button>
+                <button type="button" id="btn-snext">></button>
+            </div>
             <div class="character-slider">
                 <img src="../assets/_characters/character1-alt.png" alt="" class="slide">
                 <img src="../assets/_characters/character2-alt.png" alt="" class="slide">

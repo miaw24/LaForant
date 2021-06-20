@@ -5,7 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 12em;
+    /* height: 12em; */
+    height: 15em;
 }
 
 #content-title img{
@@ -16,7 +17,7 @@
     animation-fill-mode: both;
     /* animation-delay: 0.1s; */
     padding: 1em;
-    max-width: 10em;
+    max-width: 12em;
 }
 
 #content-title h1{
