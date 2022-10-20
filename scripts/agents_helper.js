@@ -28,8 +28,8 @@ chars.push(new Character(
 ))
 
 chars.push(new Character(
-    "Phoenix",
-    "Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he'll rush into a fight on his own terms."
+    "Pheonix",
+    "Hailing from the U.K., Pheonix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he'll rush into a fight on his own terms."
 ))
 
 chars.push(new Character(
@@ -82,8 +82,19 @@ chars.push(new Character(
     "Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she's always eons ahead of her enemy's next move."
 ))
 
+function init_slide(){
+    let cont = $('.character-slider')
+    for(let i = 0; i < chars.length; i++){
+        let img = `../assets/character_img_slider/${chars[i].name.toLowerCase()}.png`
+        let s = $('<img>').attr('class', 'slide').attr('src', img)
+        cont.css({'background-color': `url("../assets/_chars/bg${(i % 6) + 1}.png")`})
+        cont.append(s)
+    }
+}
+
 $(document).ready(function(){
     if($('title').text() === 'LaForant | Agents'){
+        init_slide()
         let container = $('#character-container')
         for(let i = 0; i < chars.length; i++){
             let img = `../assets/_characters/${chars[i].name.toLowerCase()}.png`
@@ -104,7 +115,6 @@ $(document).ready(function(){
         }
     } else if($('title').text() === 'LaForant | Home'){
         let container = $('#showcase-charas .showcase-items')
-        // for(let i = 0; i < chars.length; i++){
         for(let i = 0; i < 3; i++){
             let img = `assets/_characters/${chars[i].name.toLowerCase()}.png`
             let name = chars[i].name

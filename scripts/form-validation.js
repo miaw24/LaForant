@@ -12,8 +12,6 @@ function validate_username(username_raw, error_message){
         error_message.push('Username must not be empty')
     } else if(username.length < USERNAME_LENGTH){
         error_message.push(`Username must have at least ${USERNAME_LENGTH} characters`)
-    // } else if(username.includes(' ')){
-    //     error_message.push('Username must not contain space')
     } else{
         for(let i = 0; i < username.length; i++){
             if(!(USERNAME_VALID_CHARS.includes(username[i]))){
@@ -126,7 +124,6 @@ function validate_nationality(nationality, error_message){
 
 function validate_dob(dob, error_message){
     let current_date = new Date()
-    // let dob_date = new Date(dob.value.split('-').toString())
     let dob_date = new Date(dob.value)
     if(isNaN(dob_date.getTime())){
         error_message.push('Please enter your date of birth')

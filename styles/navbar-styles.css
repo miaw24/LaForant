@@ -127,10 +127,8 @@
     #alt-navbar .nav-show{
         z-index: 666;
         display: flex;
-        /*position: absolute;*/
         position: fixed;
         margin: 5em 0em 1em 0em;
-        /*top: 10em;*/
     }
     #alt-navbar .nav-show button{
         color: white;
@@ -140,11 +138,9 @@
         min-width: 5em;
     }
     #alt-navbar .navbar-nav{
-        /*display: flex;*/
         z-index: 900;
         flex-direction: column;
         align-items: flex-start;
-        /*position: absolute;*/
         position: fixed;
         background-color: rgb(12, 12, 12);
         display: none;

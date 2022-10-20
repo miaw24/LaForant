@@ -5,7 +5,6 @@ function dropdown_fix(){
     $('.nav-dropdown-container').css({
         'margin-top': top_delta
     })
-    // console.log(top_delta)
 }
 
 function dropdown_width_fix(){
@@ -37,12 +36,6 @@ function hide_nav(){
 }
 
 function show_nav(){
-    // $("#alt-navbar #show-nav").css({
-    //     display: 'none'
-    // })
-    // $("#alt-navbar .nav-title").css({
-    //     display: 'none'
-    // });
     $("#alt-navbar .navbar-nav").css({
         display: 'flex'
     });

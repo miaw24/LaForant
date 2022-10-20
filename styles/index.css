@@ -7,7 +7,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*min-height: 400px;*/
 }
 
 #banner{
@@ -36,12 +35,9 @@
 }
 
 #content-title img{
-    /* padding: 16px;
-    max-width: 160px; */
     animation: opacity-in;
     animation-duration: 2s;
     animation-fill-mode: both;
-    /* animation-delay: 0.1s; */
     padding: 1em;
     max-width: 50vw;
     min-width: 10em;
@@ -57,7 +53,6 @@
 }
 
 #content-container #content-information #content-information-texts{
-    /*position: absolute;*/
     text-align: center;
     max-width: 50vw;
     min-width: 300px;
@@ -82,7 +77,6 @@
 
 .btn{
     display: inline-block;
-    /*margin-top: 1em;*/
     margin-bottom: 1em;
     font-size: 1em;
     text-decoration: none;
@@ -95,9 +89,7 @@
 }
 
 #content-container #content-showcase{
-    /*padding: 1em;*/
     color: rgb(255, 255, 255);
-    /* background-color: rgb(255, 102, 0); */
 }
 
 #content-container #content-showcase .showcase-title{
@@ -111,19 +103,16 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /*justify-content: space-around;*/
     justify-content: center;
     padding: 0em 0em 2em 0em;
 }
 
 #content-container #content-showcase .showcase-box{
-    /*margin: 1em 0.5em 0em 0.5em;*/
     margin: 1em 0em 0em 0em;
     width: 20vw;
     height: 40vw;
     min-width: 200px;
     min-height: 400px;
-    /*background-color: var(--main-color-alt);*/
     display: flex;
     justify-content: center;
 }
@@ -135,10 +124,7 @@
     min-height: 400px;
     object-fit: cover;
     object-position: top;
-    /*opacity: 1;*/
-    opacity: 0.5;
-    /*background-color: black;*/
-    /*background-color: var(--main-color-alt);*/
+    opacity: 0.8;
 }
 
 #content-container #content-showcase .showcase-texts{
@@ -171,7 +157,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    /*justify-content: space-around;*/
     justify-content: center;
 }
 
@@ -184,12 +169,8 @@
 
 /* hover anim [start] */
 
-/* #content-container #content-showcase .showcase-box:hover{
-    opacity: 100%;
-} */
 
 #content-container #content-showcase .showcase-box:hover .showcase-image > img{
-    /*opacity: 0.7;*/
     opacity: 1;
 }
 

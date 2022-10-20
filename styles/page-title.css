@@ -1,21 +1,16 @@
 #content-title{
-    /* background-color: var(--main-color-alt); */
     background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 12em; */
     height: 15em;
 }
 
 #content-title img{
-    /* padding: 16px;
-    max-width: 160px; */
     animation: opacity-in;
     animation-duration: 2s;
     animation-fill-mode: both;
-    /* animation-delay: 0.1s; */
     padding: 1em;
     max-width: 12em;
 }

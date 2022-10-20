@@ -15,16 +15,11 @@
     align-items: center;
     text-align: center;
     width: 40vw;
-    /* min-width: 600px; */
 }
 
 #form-wrapper{
-    /* animation-name: slidein-right;
-    animation-duration: 2s; */
     display: flex;
-    /* width: 100%; */
     width: 40vw;
-    /* min-width: 600px; */
     flex-direction: column;
     align-items: center;
 }
@@ -33,7 +28,6 @@
     animation-name: slidein-right;
     animation-duration: 2s;
     animation-fill-mode: both;
-    /* opacity: 0; */
 }
 
 .form-qs{
@@ -62,7 +56,6 @@
     min-width: 200px;
     min-height: 70px;
     font-size: 1em;
-    /*background-color: white;*/
     background-color: var(--main-color-alt);
     color: white;
     border: 0.1em solid var(--main-color-alt);
